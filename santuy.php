@@ -1,27 +1,32 @@
 <?php
 
+error_reporting(0);
+if (!file_exists('token')) {
+    mkdir('token', 0777, true);
+}
+
 include ("curl.php");
 echo "\n";
-echo "\e[94m           Instagram : @endxpraaa_            \n";   
-echo "\e[91m NOMOR INDONESIA '62***' ,NOMOR  US='1***'\n";
-echo "\e[93m NB : GUNAKAN DENGAN BIJAK BROW !\n";
+echo "\e[94m            NOT SAFE FOR WORK IF2               \n";
+echo "\e[91m FORMAT NOMOR HP : INDONESIA '62***' , US='1***'\n";
+echo "\e[93m SCRIPT GOJEK AUTO REGISTER + AUTO CLAIM VOUCHER\n";
 echo "\n";
-echo "\e[96m[?] Masukkan Nomor lo (62/1) : ";
+echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
     {
-    echo "\e[91m[x] Nomor dah kedaftar goblog!\n";
+    echo "\e[91m[x] Nomor Telah Terdaftar\n";
     }
   else
     {
     otp:
-    echo "\e[96m[!] Masukkan Kode Verifikasi lo (OTP) : ";
+    echo "\e[96m[!] Masukkan Kode Verifikasi (OTP) : ";
     $otp = trim(fgets(STDIN));
     $verif = verif($otp, $register);
     if ($verif == false)
         {
-        echo "\e[91m[x] Kode Verifikasi lo Salah\n";
+        echo "\e[91m[x] Kode Verifikasi Salah\n";
         goto otp;
         }
       else

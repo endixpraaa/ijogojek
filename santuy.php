@@ -3,10 +3,10 @@
 include ("curl.php");
 echo "\n";
 echo "\e[94m           Instagram : @endxpraaa_            \n";   
-echo "\e[91m FORMAT NOMOR HP : INDONESIA '62***' , US='1***'\n";
-echo "\e[93m SCRIPT GOJEK AUTO REGISTER + AUTO CLAIM VOUCHER\n";
+echo "\e[91m NOMOR INDONESIA '62***' ,NOMOR  US='1***'\n";
+echo "\e[93m NB : GUNAKAN DENGAN BIJAK BROW !\n";
 echo "\n";
-echo "\e[96m[?] Masukkan Nomor lo(62/1) : ";
+echo "\e[96m[?] Masukkan Nomor lo (62/1) : ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
@@ -16,7 +16,7 @@ if ($register == false)
   else
     {
     otp:
-    echo "\e[96m[!] Masukkan Kode Verifikasi (OTP) : ";
+    echo "\e[96m[!] Masukkan Kode Verifikasi lo (OTP) : ";
     $otp = trim(fgets(STDIN));
     $verif = verif($otp, $register);
     if ($verif == false)

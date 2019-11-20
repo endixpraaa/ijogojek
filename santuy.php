@@ -1,10 +1,11 @@
 <?php
+
 echo "\e[96m[?]#############################################
-echo "\e[96m[?]#SC GOJEK AUTO REGIST + AUTO CLAIM VOUCHER. #
-echo "\e[96m[?]#NOMOR INDONESIA '62***' , NOMOR US '1***.  #
-echo "\e[96m[?]#THANKS TO SGB TEAM X HENDI GANS.           #
-echo "\e[96m[?]#NB : GUNAKAN DENGAN BIJAK YA BROW !        #
-echo "\e[96m[?]#############################################
+echo "\e[96m[?]#SC GOJEK AUTO REGIST + AUTO CLAIM VOUCHER. \n"; #
+echo "\e[96m[?]#NOMOR INDONESIA '62***' , NOMOR US '1***.  \n"; #
+echo "\e[96m[?]#THANKS TO SGB TEAM X HENDI GANS.          \n";  #
+echo "\e[96m[?]#NB : GUNAKAN DENGAN BIJAK YA BROW !        \n"; #
+echo "\e[96m[?]############################################\n"; #
 
 
 

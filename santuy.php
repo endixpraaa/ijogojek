@@ -11,7 +11,7 @@ if (!file_exists('token')) {
 include ("curl.php");
 echo "\n";
 echo "\e[91m[x] SCRIPT AUTO REGIST + AUTO CLAIM VOUCHER
-echo "\e[94m[x] THANKS TO SGB TEAM X hendi ar 
+echo "\e[94m[x] THANKS TO SGB TEAM X hendi ar : ":
 echo "\e[91m[x] NB : GUNAKAN DENGAN BIJAK YA BROW !     
 echo "\e[96m[?] Masukkan Nomor hp loe (62/1) : ";
 $nope = trim(fgets(STDIN));

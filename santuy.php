@@ -7,16 +7,16 @@ if (!file_exists('token')) {
 
 include ("curl.php");
 echo "\n";
-echo "\e[94m            NOT SAFE FOR WORK IF2               \n";
-echo "\e[91m FORMAT NOMOR HP : INDONESIA '62***' , US='1***'\n";
+echo "\e[94m            THANKS TO SGB TEAM X Hendi gans               \n";
+echo "\e[91m FORMAT NOMOR HP  INDONESIA '62***' , US='1***'\n";
 echo "\e[93m SCRIPT GOJEK AUTO REGISTER + AUTO CLAIM VOUCHER\n";
 echo "\n";
-echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
+echo "\e[96m[?] Masukkan Nomor HP Lo (62/1) : ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
     {
-    echo "\e[91m[x] Nomor Telah Terdaftar\n";
+    echo "\e[91m[x] Nomor Telah Terdaftar goblog !\n";
     }
   else
     {
@@ -26,27 +26,27 @@ if ($register == false)
     $verif = verif($otp, $register);
     if ($verif == false)
         {
-        echo "\e[91m[x] Kode Verifikasi Salah\n";
+        echo "\e[91m[x] Kode Verifikasi Salah goblog !\n";
         goto otp;
         }
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] Trying to redeem Voucher : GOFOODSANTAI19 !\n";
+        echo "\e[93m[!] Mencoba  redeem Voucher : GOFOODSANTAI19 !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : GOFOODSANTAI11 !\n";
+            echo "\e[93m[!] Mencoba  redeem Voucher : GOFOODSANTAI11 !\n";
             sleep(3);
             goto next;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Mencoba redeem Voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -55,14 +55,14 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOODSANTAI08 !\n";
+                echo "\e[93m[!] Mencoba redeem Voucher : GOFOODSANTAI08 !\n";
                 sleep(3);
                 goto next1;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Mencoba redeem Voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -71,7 +71,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Mencoba redeem Voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -79,7 +79,7 @@ if ($register == false)
             {
             echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+            echo "\e[93m[!] Mencoba redeem Voucher : COBAINGOJEK !\n";
             sleep(3);
             goto ride;
             }
@@ -88,14 +88,14 @@ if ($register == false)
             if ($claim == false ) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : AYOCOBAGOJEK !\n";
+                echo "\e[93m[!] Mencoba redeem Voucher : AYOCOBAGOJEK !\n";
                 sleep(3);
 
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : AYOCOBAGOJEK !\n";
+                echo "\e[93m[!] Mencoba redeem Voucher : AYOCOBAGOJEK !\n";
                 sleep(3);
                 goto pengen;
             }

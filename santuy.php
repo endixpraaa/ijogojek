@@ -1,11 +1,5 @@
 <?php
 
-echo "\e[96m[?]#############################################
-echo "\e[96m[?]#SC GOJEK AUTO REGIST + AUTO CLAIM VOUCHER. \n"; #
-echo "\e[96m[?]#NOMOR INDONESIA '62***' , NOMOR US '1***.  \n"; #
-echo "\e[96m[?]#THANKS TO SGB TEAM X HENDI GANS.          \n";  #
-echo "\e[96m[?]#NB : GUNAKAN DENGAN BIJAK YA BROW !        \n"; #
-echo "\e[96m[?]############################################ #
 
 
 
@@ -16,8 +10,9 @@ if (!file_exists('token')) {
 
 include ("curl.php");
 echo "\n";
-
-
+echo "\e[91m[x] SCRIPT AUTO REGIST + AUTO CLAIM VOUCHER
+echo "\e[94m[x] THANKS TO SGB TEAM X hendi ar 
+echo "\e[91m[x] NB : GUNAKAN DENGAN BIJAK YA BROW !     
 echo "\e[96m[?] Masukkan Nomor hp loe (62/1) : ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);

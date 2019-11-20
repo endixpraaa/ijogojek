@@ -1,4 +1,12 @@
 <?php
+#############################################
+#SC GOJEK AUTO REGIST + AUTO CLAIM VOUCHER. #
+#NOMOR INDONESIA '62***' , NOMOR US '1***.  #
+#THANKS TO SGB TEAM X HENDI GANS.           #
+#NB : GUNAKAN DENGAN BIJAK YA BROW !        #
+#############################################
+
+
 
 error_reporting(0);
 if (!file_exists('token')) {
@@ -7,10 +15,8 @@ if (!file_exists('token')) {
 
 include ("curl.php");
 echo "\n";
-echo "\e[94m SC GOJEK AUTO REGIST + AUTO CLAIM VOUCHER             \n";
-echo "\e[91m NOMOR INDONESIA '62***' , NOMOR US='1***'\n";
-echo "\e[93m NB : GUNAKAN DENGAN BIJAK YA BROW !\n";
-echo "\n";
+
+
 echo "\e[96m[?] Masukkan Nomor hp loe (62/1) : ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);

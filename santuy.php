@@ -46,7 +46,7 @@ if ($register == false)
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Mencoba redeem Voucher : WADAWGOJEK !\n";
+                echo "\e[93m[!] Mencoba redeem Voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -62,26 +62,26 @@ if ($register == false)
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Mencoba redeem Voucher : WADAWGOJEK !\n";
+                echo "\e[93m[!] Mencoba redeem Voucher : COBAINGOJEK !\n";
                 sleep(3);
-                goto ride1;
+                goto ride;
             }
             next1:
             $claim = claim2($verif);
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Mencoba redeem Voucher : WADAWGOJEK !\n";
+                echo "\e[93m[!] Mencoba redeem Voucher : COBAINGOJEK !\n";
                 sleep(3);
-                goto ride2;
+                goto ride;
             }
           else
             {
             echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] Mencoba redeem Voucher : WADAWGOJEK !\n";
+            echo "\e[93m[!] Mencoba redeem Voucher : COBAINGOJEK !\n";
             sleep(3);
-            goto ride3;
+            goto ride;
             }
             ride:
             $claim = ride($verif);

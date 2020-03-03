@@ -32,29 +32,21 @@ if ($register == false)
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] Mencoba  redeem Voucher : G-75SR565 !\n";
+        echo "\e[93m[!] MENCOBA REDEEM CODE!\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!] Mencoba  redeem Voucher : G-H6PJBGF !\n";
+            echo "\e[93m[!] G-75SR565 !\n";
             sleep(3);
             goto next;
             }
             else{
            }
-            next:
-            $claim = claim1($verif);
-            if ($claim == false) {
-                echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
-                sleep(3);
-                echo "\e[93m[!] Mencoba redeem Voucher : G-F77QRYC !\n";
-                sleep(3);
-                next1;
-            }
-            else{
+
+             else{
             }
             pengen:
             $claim = cekvocer($verif);

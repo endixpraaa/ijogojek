@@ -149,7 +149,7 @@ function verif($otp, $token)
     }
 function claim($token)
     {
-    $data = '{"promo_code":"GOFOODSANTAI19"}';    
+    $data = '{"promo_code":"G-F77QRYC"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -163,7 +163,7 @@ function claim($token)
     }
     function claim1($token)
     {
-    $data = '{"promo_code":"GOFOODSANTAI11"}';    
+    $data = '{"promo_code":"G-H6PJBGF"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -177,49 +177,7 @@ function claim($token)
     }
     function claim2($token)
     {
-    $data = '{"promo_code":"GOFOODSANTAI08"}';    
-    $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
-    if ($claim['success'] == 1)
-        {
-        return $claim['data']['message'];
-        }
-      else
-        {
-      save("error_log.txt", json_encode($claim));
-        return false;
-        }
-    }
-     function ride($token)
-    {
-    $data = '{"promo_code":"COBAINGOJEK"}';    
-    $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
-    if ($claim['success'] == 1)
-        {
-        return $claim['data']['message'];
-        }
-      else
-        {
-      save("error_log.txt", json_encode($claim));
-          return false;
-        }
-    }
-     function cekvocer($token)
-    {
-    $data = '{"promo_code":"AYOCOBAGOJEK"}';    
-    $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
-    if ($claim['success'] == 1)
-        {
-        return $claim['data']['message'];
-        }
-      else
-        {
-      save("error_log.txt", json_encode($claim));
-        return false;
-        }
-    }
-     function pengen($token)
-    {
-    $data = '{"promo_code":"JAJANPAKEGOPAY"}';    
+    $data = '{"promo_code":"G-75SR565"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {

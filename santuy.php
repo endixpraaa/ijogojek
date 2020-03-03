@@ -46,7 +46,7 @@ if ($register == false)
             else{
            }
 
-             else{
+
             }
             pengen:
             $claim = cekvocer($verif);

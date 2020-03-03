@@ -52,7 +52,7 @@ if ($register == false)
                 sleep(3);
                 echo "\e[93m[!] Mencoba redeem Voucher : G-F77QRYC !\n";
                 sleep(3);
-                goto next1;
+                next1;
             }
             else{
             }

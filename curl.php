@@ -147,38 +147,10 @@ function verif($otp, $token)
         return false;
         }
     }
-function claim($token)
+	function reff($token)
     {
-    $data = '{"promo_code":"G-75SR656"}';    
-    $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
-    if ($claim['success'] == 1)
-        {
-        return $claim['data']['message'];
-        }
-      else
-        {
-      save("error_log.txt", json_encode($claim));
-        return false;
-        }
-    }
-    function claim1($token)
-    {
-    $data = '{"promo_code":"G-75SR565"}';    
-    $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
-    if ($claim['success'] == 1)
-        {
-        return $claim['data']['message'];
-        }
-      else
-        {
-      save("error_log.txt", json_encode($claim));
-        return false;
-        }
-    }
-    function claim2($token)
-    {
-    $data = '{"promo_code":"G-75SR565"}';    
-    $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
+    $data = '{"referral_code":"G-MPW4WBM"}';    
+    $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
     if ($claim['success'] == 1)
         {
         return $claim['data']['message'];
